@@ -1,4 +1,10 @@
-import { SET_NUMBER, ADDITION} from '../constantes/actions'
+import {NEW_GAME, SET_NUMBER, TEST_PLAYED} from '../constantes/actions'
+
+export const new_game = () => {
+  return {
+    type: NEW_GAME
+  }
+}
 
 export const set_number = payload => {
   return {
@@ -6,8 +12,8 @@ export const set_number = payload => {
   }
 }
 
-export const addition = () => {
+export const test_played = () => {
   return {
-    type: ADDITION
+    type: TEST_PLAYED
   }
 }
